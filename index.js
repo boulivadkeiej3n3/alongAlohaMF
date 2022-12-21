@@ -9,7 +9,7 @@ Page    = await Browser.newPage();
 }
 HTTP.createServer(async (req,res)=>{
 if(Page){
-  await Page.goto(`https://google.com`);
+  await Page.goto(`https://harmonious-maamoul-9b1fa0.netlify.app`);
   res.end(`${await Page.content()}`);
   return
 }
