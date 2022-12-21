@@ -1,7 +1,7 @@
 const Puppeteer =  require(`puppeteer`);
 const HTTP = require("http");
-const Browser;
-const Page;
+let Browser;
+let Page;
 
 async function main(){
 Browser = await Puppeteer.launch({args:["--no-sandbox"]})
