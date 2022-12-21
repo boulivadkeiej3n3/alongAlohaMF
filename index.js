@@ -11,6 +11,7 @@ HTTP.createServer(async (req,res)=>{
 if(Page){
   await Page.goto(`https://google.com`);
   res.end(`${await Page.content()}`);
+  return
 }
   res.end(`hello world`);
 
